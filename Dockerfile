@@ -20,8 +20,8 @@ RUN git clone https://github.com/google/protobuf.git && \
 
 RUN go get google.golang.org/grpc
 
-RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
-RUN go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-openapiv2
+RUN go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-grpc-gateway
+RUN go get -u github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2
 RUN go get github.com/golang/protobuf/protoc-gen-go
 
 RUN cp /go/bin/protoc-gen-go /usr/bin/
